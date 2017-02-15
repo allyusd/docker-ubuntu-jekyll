@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
   gcc \
   tree \
   python && \
-  rm -rf /var/lib/apt/lists/* &&
+  rm -rf /var/lib/apt/lists/* && \
   gem install jekyll bundler
 
 
