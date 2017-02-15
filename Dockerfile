@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
   ruby-dev \
   make \
   gcc \
-  tree && \
+  tree \
+  python && \
   gem install jekyll bundler
 
 
