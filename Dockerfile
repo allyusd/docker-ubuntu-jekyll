@@ -10,4 +10,12 @@ RUN apt-get update && apt-get install -y \
   rm -rf /var/lib/apt/lists/* && \
   gem install jekyll bundler
 
+COPY Gemfile /
 
+RUN bundle install
+
+EXPOSE 4000
+
+VOLUME /home/ubuntu/jekyll
+
+WORKDIR /home/ubuntu/jekyll
