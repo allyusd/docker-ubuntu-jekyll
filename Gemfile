@@ -26,3 +26,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# pygments.rb exposes the pygments syntax highlighter to Ruby
+gem "pygments.rb", "~> 0.6.3"
