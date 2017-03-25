@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y \
 
 COPY Gemfile /
 
+gem install nokogiri -v '1.7.1'
+
 RUN bundle install
 
 EXPOSE 4000
