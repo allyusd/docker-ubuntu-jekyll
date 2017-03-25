@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY Gemfile /
 
-gem install nokogiri -v '1.7.1'
+RUN gem install nokogiri -v '1.7.1'
 
 RUN bundle install
 
