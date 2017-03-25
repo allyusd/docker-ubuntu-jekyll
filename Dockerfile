@@ -6,13 +6,11 @@ RUN apt-get update && apt-get install -y \
   make \
   gcc \
   tree \
-  python && \
+  zlib1g-dev && \
   rm -rf /var/lib/apt/lists/* && \
   gem install jekyll bundler
 
 COPY Gemfile /
-
-RUN gem install nokogiri -v '1.7.1'
 
 RUN bundle install
 
