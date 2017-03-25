@@ -12,7 +12,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY Gemfile /
 
-RUN gem install nokogiri -v '1.7.1' && bundle install
+RUN gem install nokogiri -v '1.7.1' && \
+  bundle config build.nokogiri --use-system-libraries && \
+  bundle install
 
 EXPOSE 4000
 
